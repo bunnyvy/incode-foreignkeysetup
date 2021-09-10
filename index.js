@@ -24,6 +24,8 @@ app.use(session({
     secret: process.env.SESS_SECRET
   }))
 
+// app.use(session)
+  
 // route middleware
 app.use('/signup', signupRouoter)
 app.get('login', (req, res) => {
